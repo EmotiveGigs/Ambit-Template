@@ -3,7 +3,7 @@
 html {
     max-width: 1380px;
     width: 100%;
-    /* margin: auto; */
+    margin: auto;
 }
 
 body {
@@ -51,15 +51,16 @@ header {
     color: black;
 }
 
+.icon-text-container {
+    display: flex;
+    z-index: 999;
+}
+
 .icon-containers {
     display: flex;
     width: 100%;
 }
 
-.icon-text-container {
-    display: flex;
-    z-index: 999;
-}
 
 .icon-text-wrapper svg {
     font-size: 20px;
@@ -373,4 +374,115 @@ td {
     width: auto;
     padding: 20px 10px 20px 20px;
 
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        max-width: 760px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .logo-container img {
+        width: 320px;
+        height: 240px;
+        margin-bottom: -42px;
+
+    }
+
+    .nav-links {
+        display: flex;
+        width: 50%;
+        justify-content: space-evenly;
+        padding: 0px;
+        margin: 12px auto;
+        font-size: 15px;
+    }
+
+    .nav-links a {
+        margin: 5px
+    }
+
+    .icon-text-container {
+        display: flex;
+        max-width: 100%;
+        margin: auto;
+        z-index: 999;
+    }
+
+    .icon-text-wrapper span {
+        height: 50%;
+        width: 100%;
+        font-size: 9px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        background-color: rgb(255, 188, 66);
+        padding: 0px 5px;
+        /* border: 1px solid black; */
+    }
+
+    .icon-text-wrapper svg {
+        font-size: 5px;
+        padding: 5px;
+        height: 45%;
+        background-color: #ffffff;
+        /* border: 1px solid black; */
+        width: 100%;
+    }
+
+    .icon-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-container {
+        max-width: 760px;
+        width: 100%;
+    }
+
+    .product-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+
+    .product-title {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        margin: auto auto 20px auto;
+        max-width: 300px;
+        max-width: 95%;
+
+
+    }
+
+    .images-descritpion-container {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .images-description-wrapper {
+        max-width: 300px;
+    }
+
+    .images-description-wrapper img {
+        width: 100%;
+        height: auto;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .description-container {
+        text-align: center;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .description-container span {
+        border-bottom: 1px solid black;
+    }
 }
